@@ -13,6 +13,7 @@ seaborn = "*"
 flask-praetorian = "*"
 psycopg2-binary = "*"
 python-dotenv = "*"
+jupyter = "*"
 
 [dev-packages]
 autopep8 = "*"

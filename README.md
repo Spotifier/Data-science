@@ -3,10 +3,14 @@ This is the Data Science portion for an Application that uses Machine Learning t
 
 ## 👉 Go to the app [Spotifier](https://spotifier.netlify.com/)
 
-## 👇 Flowchart
-![Alt text](data/Flowchart.png)
 
-## 👇 Project Info
+## System Architecture 
+![System Architecture of how app works](data/spotifier_arch.png)
+
+## Machine Learning processs flowchart
+![ML process flowchart](data/Flowchart.png)
+
+## Project Info
 
 - For the Data Science portion of this application, we used this Kaggle [Spotify Audio Features](https://www.kaggle.com/tomigelo/spotify-audio-features) Dataset. Dataset has a number of tracks and for every track an artist. You will also find Spotify's Track Id, along with a number of numeric audio features such as acousticness, danceability, tempo, speechiness and several more. We took this information and utilized a [KDTree](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KDTree.html) from Scikit Learn in order to model our Song Recommender. This method finds the songs nearest to each other in terms of the numerical audio features previously mentioned. From there we have a list of songs, and along with each song is a number of recommended songs(in the example we use 15). We then push it to AWS RDS PostgreSQL database.
 
@@ -15,7 +19,7 @@ This is the Data Science portion for an Application that uses Machine Learning t
 
 
 
-## 👇 Backend API Endpoint 
+## Backend API Endpoint 
 
 Endpoints that do not say ‘No Auth Required’ or Log In/Register/Log Out will all require authentication    
 **Register**   
@@ -72,7 +76,7 @@ DELETE - https://spotify-song-suggester.herokuapp.com/tracks/remove/{trackid}
 
 ![Alt text](https://github.com/Build-Week-Spotify-Song-Suggester/Data-science/blob/master/data/Screen%20Shot%202019-09-24%20at%207.37.52%20PM.png)
 
-## 👇 Song Selections along with 200 Song Recommendations Based on 
+## Song Selections along with 200 Song Recommendations Based on 
 Notice how they generally follow the same trajectory along the path across the features, naturally with a few outliers
 This is helping to Visually convey how Songs are recommended based on songs nearest to it in terms of quantifable Audio Features such as accoustiness, danceability, energy etc.
 ![Alt text](https://github.com/Build-Week-Spotify-Song-Suggester/Data-science/blob/master/data/newplot.png)
@@ -82,7 +86,7 @@ This is helping to Visually convey how Songs are recommended based on songs near
 ![Alt text](https://github.com/Build-Week-Spotify-Song-Suggester/Data-science/blob/master/data/newplot2.png)
 
 
-## 👇 Logs
+## Logs
 
 - 2019-09-21 - Started explanatory notebooks
 - 2019-09-23 - Re-structured and organized folders, and files

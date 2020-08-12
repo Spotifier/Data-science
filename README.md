@@ -5,10 +5,10 @@ This is the Data Science portion for an Application that uses Machine Learning t
 
 
 ## System Architecture 
-![System Architecture of how app works](data/spotifier_arch.png)
+![System Architecture of how app works](assets/spotifier_arch.png)
 
 ## Machine Learning processs flowchart
-![ML process flowchart](data/Flowchart.png)
+![ML process flowchart](assets/spotifier_ml_process.png)
 
 ## Project Info
 
